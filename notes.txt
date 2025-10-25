@@ -1,0 +1,45 @@
+study.io (start with a simple tool for you then expand)
+
+think of a social media platform first, study utility 2nd.
+
+can see if others are online and what are they studying, working on, also away / afk similar to discord
+
+make mock users to fill leaderboard
+
+tool or app u need
+
+simple todo list
+
+can make into a react native app
+
+possibly have section for study timer?
+
+(kanban board inspired)
+3 sections, to do, in progress, done. (after a day or two the done goes away / can possibly keep info and have a list that can be toggled)
+
+** colors **
+blue - react blue (todo)
+yellow - light yellow (in progress)
+green - bright green (copy others green) (done)
+
+light and dark mode
+
+items are draggable from one section to another
+
+can possibly set up sections for user to save their data and have unique logins, auth
+
+if want extra : user be able to make own profile, with completed assignments done / todo / need to do etc...
+
+profile can have classes being taken / major
+
+point system when completing projects, use points to buy things? or just leave leaderboard for points
+
+on profile copy github style tracker
+
+simplistic layout similar to monkeytype
+
+create creative logo with animations
+
+possible animations for moving items (special animation / sound for completing items)
+
+should be able to work on mobile (screen widths)
