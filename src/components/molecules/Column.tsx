@@ -1,0 +1,1 @@
+// component for each of 3 columns
