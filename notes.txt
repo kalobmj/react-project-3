@@ -43,3 +43,9 @@ create creative logo with animations
 possible animations for moving items (special animation / sound for completing items)
 
 should be able to work on mobile (screen widths)
+
+need to flesh out how props work with our components
+
+need to get columns and items working (maybe just make placeholder for one col and col with items to start)
+
+items will fall into correct section and change their status depending on where they are dropped
