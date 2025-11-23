@@ -18,11 +18,21 @@ body {
   
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
+  
+  /* text-align: center; */
 
 
   
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* margin: auto; */
 }
 
 .container {
@@ -35,6 +45,8 @@ body {
   height: 100%;
 
   margin: auto;
+
+  /* position: fixed; */
   
   /* margin-top: 10%;
   margin-bottom: 10%; */

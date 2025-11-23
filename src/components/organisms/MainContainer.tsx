@@ -4,7 +4,7 @@ const MainContainer = () => {
 
     return (
         <div className="container">
-            <h1>center this</h1>
+            <h1>center this center this</h1>
         </div>
     )
 
