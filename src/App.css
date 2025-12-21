@@ -58,6 +58,12 @@ body {
 
 }
 
-.list-group {
-  margin: 20px;
+.list-group-container {
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  margin: 5px;
+  min-width: 100%;
 }
