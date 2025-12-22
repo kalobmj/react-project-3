@@ -61,11 +61,22 @@ const Placeholder = () => {
     });
     });
 
+    // placeholders on bootstrap
+      // create blank grey placeholders
+      // rethink about placeholder concept
+
     return (
     <ul className='list-group-container' ref={listRef}>
-      <li className='list-group-item'>Item One</li>
-      <li className='list-group-item'>Item Two</li>
-      <li className='list-group-item'>Item Three</li>
+      {/* <button className='list-group-item'>test</button> */}
+      <li className='placeholder list-group-item'>
+        <span className=''>task</span>
+      </li>
+      <li className='placeholder list-group-item'>
+        <span className=''>task</span>
+      </li>
+      <li className='placeholder list-group-item'>
+        <span className=''>task</span>
+      </li>
     </ul>
   );
 

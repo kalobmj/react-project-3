@@ -20,7 +20,7 @@ const MainContainer = () => {
         <div className="container">
             {/* <h1>center this</h1> */}
             <Placeholder/>
-            <Column/>
+            {/* <Column/> */}
             <Placeholder/>
             {/* <Column/> */}
             <Placeholder/>

@@ -60,10 +60,20 @@ body {
 
 .list-group-container {
   padding: 20px;
+  height: 100%;
   margin-bottom: 0;
+  /* list-group-border-width: 20px; */
+  /* border-color: blue; */
+  /* border-width: 20px; */
+  /* overflow: visible; */
 }
 
 .list-group-item {
-  margin: 5px;
-  min-width: 100%;
+  margin-bottom: 5px;
+  min-width: 100px;
+  min-height: 40px;
+  background-color: rgb(96, 96, 96);
+  /* border-radius: 100px; */
+  /* border-top-right-radius: 20px;
+  border-top-left-radius: 20px; */
 }
