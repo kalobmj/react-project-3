@@ -9,9 +9,9 @@
 const Item = () => {
 
     return (
-        <div className="item">
-
-        </div>
+            <li className="list-group-item">
+                <span className="item-span">test123</span>
+            </li>
     )
 
 };

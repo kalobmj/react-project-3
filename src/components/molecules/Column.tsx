@@ -6,7 +6,11 @@
 
 // cols will also pass down section parameter to items, to keep track of them, and help with status, all completed = green, some in progress = yellow etc.
 
+import { useRef } from "react";
+import { useEffect } from 'react';
 import Item from "../atoms/item";
+
+import Sortable from 'sortablejs';
 
 // wed notes
 // will render 3 columns
@@ -20,10 +24,33 @@ import Item from "../atoms/item";
 //     tasks.map(task => <Item key={task.id} {...task} />)
 //   )}
 
+// placeholder are going to be an element rounded like picture, with span elements and using bootstrap placeholder
+
+// will pick between 2 or 3 lines, and use random to vary size of lines
+
+// include 1-2 placeholder elements for each column that does not include tasks
+
 const Column = () => {
 
+    const listRef = useRef<HTMLDivElement>(null);
+
+    // useEffect trigger on each column load
+        // creates instance of sharable SortableJS list
+    useEffect(() => {
+
+        if (!listRef.current) return;
+
+        new Sortable(listRef.current, {
+            group: 'shared',
+            animation: 150,
+            ghostClass: 'blue-background-class'
+        });
+    }, []); // empty array
+
     return (
-        <div className="column">
+        <div className="list-group-container" ref={listRef}>
+            <Item />
+            <Item />
             <Item />
         </div>
     )

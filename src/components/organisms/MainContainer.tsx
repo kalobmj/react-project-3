@@ -1,6 +1,6 @@
 // main container for 3 different columns
 
-import Placeholder from "../molecules/Placeholder";
+import Placeholder from "../atoms/Placeholder";
 import Column from "../molecules/Column";
 
 const MainContainer = () => {
@@ -19,12 +19,9 @@ const MainContainer = () => {
     return (
         <div className="container">
             {/* <h1>center this</h1> */}
-            <Placeholder/>
             <Column/>
-            <Placeholder/>
-            {/* <Column/> */}
-            <Placeholder/>
-            {/* <Column/> */}
+            <Column/>
+            <Column/>
         </div>
     )
 
