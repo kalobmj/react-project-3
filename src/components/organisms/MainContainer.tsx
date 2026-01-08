@@ -2,29 +2,29 @@
 
 import Placeholder from "../atoms/Placeholder";
 import Column from "../molecules/Column";
+import { useState } from 'react';
 
 const MainContainer = () => {
 
-    // ## variables (props)
-    // will pass variables:
-    // (obj key val pairs of items in each col) -> can use useState
-        // (placeholder) yes, no
-        // (column) yes, no
-    // binary will decide if shown or not
-    // these will pass up from place, col components
-    // place will check for items list len (hashmap obj), 
-        // if no items display place and hide col
-        // otherwise display col and hide place
+    // set properties of 3 columns
+    // setColumns to update columns?
+    const [columns, setColumns] = useState([
+        { id: 1, title: 'To Do', items: [] },
+        { id: 2, title: 'In Progress', items: [] },
+        { id: 3, title: 'Done', items: [] },
+    ]);
 
     return (
         <div className="container">
-            {/* <h1>center this</h1> */}
-            <Column/>
-            <Column/>
-            <Column/>
+            {columns.map(col => (
+                <Column
+                    key={col.id}
+                    title={col.title}
+                    items={col.items}
+                />
+            ))}
         </div>
     )
-
 };
 
 export default MainContainer;

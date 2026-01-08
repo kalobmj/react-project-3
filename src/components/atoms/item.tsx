@@ -9,9 +9,13 @@
 const Item = () => {
 
     return (
-            <li className="list-group-item">
-                <span className="item-span">test123</span>
-            </li>
+        <li className="list-group-item">
+            <span className="item-span">
+                {/* task placeholder below */}
+                {`Task ${Math.floor(Math.random() * 3) + 1
+                    }`}
+            </span>
+        </li>
     )
 
 };

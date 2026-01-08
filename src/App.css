@@ -15,6 +15,8 @@ html {
 body {
   margin: 0px;
   min-height: 100%;
+
+  background-color: #2D829A;
   
   display: flex;
   flex-direction: column;
@@ -39,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(101, 73, 36);
+  background-color: rgba(101, 73, 36, 0.311);
 
   /* border-radius: 20px; */
   /* padding: 200px; */
@@ -58,15 +60,41 @@ body {
 
 }
 
+.column-title {
+  background-color: rgb(215, 250, 238);
+
+  border-radius: 20px;
+
+
+}
+
 .list-group-container {
-  padding: 20px;
+  /* padding: 10px; */
   height: 100%;
   margin-bottom: 0;
   /* list-group-border-width: 20px; */
   /* border-color: blue; */
   /* border-width: 20px; */
   /* overflow: visible; */
+
+  background-color: white;
+
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  padding: 0;
+
+  border-radius: 5px;
+
 }
+
+h2 {
+  margin-top: 0px;
+
+
+}
+
 
 .list-group-item {
   margin-bottom: 5px;
