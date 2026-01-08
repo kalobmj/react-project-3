@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-
 }
 
 html {
@@ -15,18 +14,11 @@ html {
 body {
   margin: 0px;
   min-height: 100%;
-
   background-color: #2D829A;
-  
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  
-  /* text-align: center; */
-
-
-  
 }
 
 .header {
@@ -34,74 +26,64 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  /* margin: auto; */
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: rgba(101, 73, 36, 0.311);
-
-  /* border-radius: 20px; */
-  /* padding: 200px; */
-
   width: 100%;
   height: 100%;
-
   margin: auto;
+}
 
-  /* position: fixed; */
-  
-  /* margin-top: 10%;
-  margin-bottom: 10%; */
-
-  height: auto;
-
+.container::before,
+.container::after {
+  display: none;
 }
 
 .column-title {
-  background-color: rgb(215, 250, 238);
-
   border-radius: 20px;
-
-
+  white-space: nowrap;
 }
 
 .list-group-container {
-  /* padding: 10px; */
   height: 100%;
   margin-bottom: 0;
-  /* list-group-border-width: 20px; */
-  /* border-color: blue; */
-  /* border-width: 20px; */
-  /* overflow: visible; */
-
   background-color: white;
-
   margin: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-
   padding: 0;
-
+  flex: 1;
+  min-width: max-content;
   border-radius: 5px;
-
 }
 
 h2 {
   margin-top: 0px;
-
-
 }
 
+/* card {
+  min-height: 1000px;
+} */
 
 .list-group-item {
   margin-bottom: 5px;
   min-width: 100px;
   min-height: 40px;
   background-color: rgb(96, 96, 96);
-  /* border-radius: 100px; */
-  /* border-top-right-radius: 20px;
-  border-top-left-radius: 20px; */
+  border-radius: 5px !important;
+}
+
+.column-1 {
+  background-color: #ffcccc;
+}
+
+.column-2 {
+  background-color: #ccffcc;
+}
+
+.column-3 {
+  background-color: #93E2F5;
 }
