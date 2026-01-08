@@ -8,11 +8,23 @@
 
 import Item from "../atoms/item";
 
+// wed notes
+// will render 3 columns
+// if tasks are included in column, render them
+// else render placeholder items (move placeholder from molecule to atom) (example below)
+//     For the placeholder logic:
+//   // Inside Column
+//   {tasks.length === 0 ? (
+//     <PlaceholderItems />
+//   ) : (
+//     tasks.map(task => <Item key={task.id} {...task} />)
+//   )}
+
 const Column = () => {
 
     return (
         <div className="column">
-            <Item/>
+            <Item />
         </div>
     )
 

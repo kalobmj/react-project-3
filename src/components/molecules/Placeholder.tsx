@@ -68,13 +68,13 @@ const Placeholder = () => {
     return (
     <ul className='list-group-container' ref={listRef}>
       {/* <button className='list-group-item'>test</button> */}
-      <li className='placeholder list-group-item'>
+      <li className='list-group-item'>
         <span className=''>task</span>
       </li>
-      <li className='placeholder list-group-item'>
+      <li className='list-group-item'>
         <span className=''>task</span>
       </li>
-      <li className='placeholder list-group-item'>
+      <li className='list-group-item'>
         <span className=''>task</span>
       </li>
     </ul>

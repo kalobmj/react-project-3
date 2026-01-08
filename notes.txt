@@ -54,3 +54,5 @@ use bootstrap for items :
     https://getbootstrap.com/docs/5.3/components/list-group/#active-items
 
 need to fix sortable js list in bookmarks
+
+plan is to have each column, then have various placeholder tasks in each (choose from list of placeholder)
