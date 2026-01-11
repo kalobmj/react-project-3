@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
       <MainContainer />
-      <AddTask/>
+      <AddTask />
     </>
   );
 }
