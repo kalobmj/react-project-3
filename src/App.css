@@ -115,17 +115,40 @@ h2 {
   align-items: center;
 }
 
+.input-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap !important;
 
-
-.form-control {
-  margin-top: 100px;
-  /* width: 2%; */
-  /* border-radius: 100px; */
-  /* background-color :black; */
-  /* text-align: right; */
-
-  margin-left: auto;
-  margin-right: auto;
-
+  position: relative;
 }
 
+.form-control {
+  margin-top: 100px !important;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid darkgray;
+
+  /* padding: 1rem 2rem; */
+
+  z-index: 1;
+
+  width: 100%;
+}
+
+.input-button {
+  margin-top: 100px;
+  background-color: rgb(197, 197, 197);
+  border-radius: 50% !important;
+  /* height: 40%; */
+  width: 6%;
+  aspect-ratio: 1;
+
+  /* border-color: none; */
+  border: none;
+
+  z-index: 10;
+
+  position: absolute;
+  right: 5px;
+}
