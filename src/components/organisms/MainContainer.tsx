@@ -1,5 +1,5 @@
 import Column from "../molecules/Column";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface Task {
   id: number;
@@ -14,16 +14,25 @@ interface ColumnType {
 
 // notes for later
 
-// this state needs to move to app.tsx
-  // this is so that we can take the function and pass down to add task
-  // and we can create the useState and pass that down to our maincontainer to render the columns and pass the task to the column
+// need to fix the state
+  // also need to fix how the columns are updating
 
-const MainContainer = () => {
+const MainContainer = ({ text }: { text: string }) => {
   const [columns, setColumns] = useState<ColumnType[]>([
     { id: 1, title: 'To Do', items: [] },
     { id: 2, title: 'In Progress', items: [] },
     { id: 3, title: 'Done', items: [] },
   ]);
+
+  useEffect(() => {
+
+    setColumns(prev => prev.map(col =>
+      col.id === 1
+        ? { ...col, items: [...col.items, { id: Date.now(), text }] }
+        : col
+    ));
+
+  }, [text]);
 
   const addTask = (text: string) => {
     setColumns(prev => prev.map(col =>
