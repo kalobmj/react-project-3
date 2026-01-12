@@ -1,8 +1,8 @@
-const Item = () => {
+const Item = ({ text }: { text: string }) => {
   return (
     <li className="list-group-item">
       <span className="item-span">
-        {`Task ${Math.floor(Math.random() * 3) + 1}`}
+        {text}
       </span>
     </li>
   );

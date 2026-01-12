@@ -14,10 +14,10 @@ interface ColumnType {
 
 // notes for later
 
-// need to fix the state
-  // also need to fix how the columns are updating
+// adding task is working i think
+  // just need to figure out how to get task text to display and not task 1, task 2, etc...
 
-const MainContainer = ({ text }: { text: string }) => {
+const MainContainer = ({ text, onTaskAdded }: { text: string; onTaskAdded: () => void }) => {
   const [columns, setColumns] = useState<ColumnType[]>([
     { id: 1, title: 'To Do', items: [] },
     { id: 2, title: 'In Progress', items: [] },
@@ -25,22 +25,15 @@ const MainContainer = ({ text }: { text: string }) => {
   ]);
 
   useEffect(() => {
-
-    setColumns(prev => prev.map(col =>
-      col.id === 1
-        ? { ...col, items: [...col.items, { id: Date.now(), text }] }
-        : col
-    ));
-
-  }, [text]);
-
-  const addTask = (text: string) => {
-    setColumns(prev => prev.map(col =>
-      col.id === 1
-        ? { ...col, items: [...col.items, { id: Date.now(), text }] }
-        : col
-    ));
-  };
+    if (text.trim()) {
+      setColumns(prev => prev.map(col =>
+        col.id === 1
+          ? { ...col, items: [...col.items, { id: Date.now(), text }] }
+          : col
+      ));
+      onTaskAdded();
+    }
+  }, [text, onTaskAdded]);
 
   return (
     <div className="container">
