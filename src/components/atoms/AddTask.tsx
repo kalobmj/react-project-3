@@ -1,7 +1,12 @@
-import upArrow from '../../up-arrow-thick-small.svg';
 import { useState } from 'react';
+import upArrow from '../../up-arrow-thick-small.svg';
 
-const AddTask = ({ text, setText }: { text:string; setText: (val: string) => void }) => {
+interface AddTaskProps {
+    text: string;
+    setText: (val: string) => void;
+}
+
+const AddTask = ({ text, setText }: AddTaskProps) => {
     const [newTask, setNewTask] = useState('');
 
     const handleText = () => {
@@ -19,15 +24,14 @@ const AddTask = ({ text, setText }: { text:string; setText: (val: string) => voi
                 placeholder="add a task"
                 value={newTask}
                 onChange={(e) => setNewTask(e.target.value)}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                        handleText();
+                    }
+                }}
             />
-            <button
-                className="input-button"
-                onClick={handleText}
-            >
-                <img
-                    src={upArrow}
-                    alt="up-arrow"
-                />
+            <button className="input-button" onClick={handleText}>
+                <img src={upArrow} alt="up-arrow" />
             </button>
         </div>
     );

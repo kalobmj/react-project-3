@@ -1,7 +1,7 @@
 const Status = () => {
-  return (
-    <div className="status"></div>
-  );
+    return (
+        <div className="status"></div>
+    );
 };
 
 export default Status;
