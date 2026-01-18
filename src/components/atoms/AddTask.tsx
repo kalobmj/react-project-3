@@ -6,7 +6,7 @@ interface AddTaskProps {
     setText: (val: string) => void;
 }
 
-const AddTask = ({ text, setText }: AddTaskProps) => {
+const AddTask = ({ setText }: AddTaskProps) => {
     const [newTask, setNewTask] = useState('');
 
     const handleText = () => {
