@@ -173,6 +173,6 @@ h2 {
   padding: 5px;
 }
 
-.trash-zone > *:not(img) {
+.trash-zone>*:not(img) {
   display: none !important;
 }
